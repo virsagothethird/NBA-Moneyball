@@ -68,12 +68,12 @@ Our data was formatted as so:
 X = 
 <table>
     <tr>
-        <td>2011_stats  2012_stats  2013_stats</td>
-        <td>2012_stats  2013_stats  2014_stats</td>
-        <td>2013_stats  2014_stats  2015_stats</td>
-        <td>2014_stats  2015_stats  2016_stats</td>
-        <td>2015_stats  2016_stats  2017_stats</td>
-        <td>2016_stats  2017_stats  2018_stats</td>
+        <td>2011_stats,  2012_stats,  2013_stats</td>
+        <td>2012_stats,  2013_stats,  2014_stats</td>
+        <td>2013_stats,  2014_stats,  2015_stats</td>
+        <td>2014_stats,  2015_stats,  2016_stats</td>
+        <td>2015_stats,  2016_stats,  2017_stats</td>
+        <td>2016_stats,  2017_stats,  2018_stats</td>
     </tr>
 </table>
 
