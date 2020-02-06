@@ -65,24 +65,23 @@ I decided to go with the following features:
 In order to predict future performance, the data was arranged in a time series format, using the past 3 seasons of stats to predict the following season.
 
 Our data was formatted as so:
+
 X = 
 <table>
     <tr>
-        <td>2011_stats,  2012_stats,  2013_stats</td>
-        <td>2012_stats,  2013_stats,  2014_stats</td>
-        <td>2013_stats,  2014_stats,  2015_stats</td>
-        <td>2014_stats,  2015_stats,  2016_stats</td>
-        <td>2015_stats,  2016_stats,  2017_stats</td>
-        <td>2016_stats,  2017_stats,  2018_stats</td>
+        <td>2011_stats  2012_stats  2013_stats  2014_stats  2015_stats  2016_stats</td>
+        <td>2012_stats  2013_stats  2014_stats  2015_stats  2016_stats  2017_stats</td>
+        <td>2013_stats  2014_stats  2015_stats  2016_stats  2017_stats  2018_stats</td>
     </tr>
 </table>
 
-#### X  =   2011_stats  2012_stats  2013_stats     y   =    2014_WS/48
-####        2012_stats  2013_stats  2014_stats              2015_WS/48
-####        2013_stats  2014_stats  2015_stats              2016_WS/48
-####        2014_stats  2015_stats  2016_stats              2017_WS/48
-####        2015_stats  2016_stats  2017_stats              2018_WS/48
-####        2016_stats  2017_stats  2018_stats              2019_WS/48
+y = 
+<table>
+    <tr>
+        <td>2014_WS/48  2015_WS/48  2016_WS/48  2017_WS/48  2018_WS/48  2019_WS/48</td>
+    </tr>
+</table>
+
 
 The base RandomForestRegressor model return an OOB score of **0.4483**, an R2 score of **0.5217**, and a mean squared error of **0.00156**.
 
