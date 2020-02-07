@@ -40,3 +40,13 @@ def residual_plot(ax, x, y, y_hat, n_bins=50):
     ax.axhline(0, color="black", linestyle="--")
     ax.scatter(x, residuals, color="grey", alpha=0.5)
     ax.set_ylabel("Residuals ($\hat y - y$)")
+
+
+def plot_many_residuals(df, var_names, y_hat, n_bins=50):
+    fig, axs = plt.subplots(len(var_names), figsize=(12, 3*len(var_names)))
+    for ax, name in zip(axs, var_names):
+        x = df[name]
+        residual_plot(ax, x, df['WS/48_4'], y_hat)
+        ax.set_xlabel(name)
+        ax.set_title("Model Residuals by {}".format(name))
+    return fig, axs
